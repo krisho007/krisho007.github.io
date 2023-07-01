@@ -1,0 +1,94 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:uxap="sap.uxap" displayBlock="true">
+    <Page title="My Profile" showHeader="false" class="sapUiContentPadding">
+        <uxap:ObjectPageLayout id="objectPageLayout" showHeaderContent="true" showAnchorBar="true">
+            <uxap:headerTitle>
+                <uxap:ObjectPageHeader objectTitle="John Doe" objectSubtitle="Software Developer">
+                    <uxap:actions>
+                        <Button icon="sap-icon://linkedin" press="onLinkedInPress" tooltip="LinkedIn" />
+                    </uxap:actions>
+                </uxap:ObjectPageHeader>
+            </uxap:headerTitle>
+
+            <uxap:sections>
+                <uxap:ObjectPageSection title="Personal Info">
+                    <uxap:subSections>
+                        <uxap:ObjectPageSubSection>
+                            <uxap:blocks>
+                                <Text text="Name: John Doe" />
+                                <Text text="Location: New York" />
+                                <Text text="Email: john.doe@example.com" />
+                            </uxap:blocks>
+                        </uxap:ObjectPageSubSection>
+                    </uxap:subSections>
+                </uxap:ObjectPageSection>
+
+                <uxap:ObjectPageSection title="Experience">
+                    <uxap:subSections>
+                        <uxap:ObjectPageSubSection>
+                            <uxap:blocks>
+                                <Text text="Company A" />
+                                <Text text="Position: Software Developer" />
+                                <Text text="Duration: 2018 - Present" />
+                            </uxap:blocks>
+                        </uxap:ObjectPageSubSection>
+
+                        <uxap:ObjectPageSubSection>
+                            <uxap:blocks>
+                                <Text text="Company B" />
+                                <Text text="Position: Web Developer" />
+                                <Text text="Duration: 2015 - 2018" />
+                            </uxap:blocks>
+                        </uxap:ObjectPageSubSection>
+                    </uxap:subSections>
+                </uxap:ObjectPageSection>
+
+                <uxap:ObjectPageSection title="Projects">
+                    <uxap:subSections>
+                        <uxap:ObjectPageSubSection>
+                            <uxap:blocks>
+                                <Text text="Project A" />
+                                <Text text="Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
+                            </uxap:blocks>
+                        </uxap:ObjectPageSubSection>
+
+                        <uxap:ObjectPageSubSection>
+                            <uxap:blocks>
+                                <Text text="Project B" />
+                                <Text text="Description: Sed tincidunt est non gravida molestie." />
+                            </uxap:blocks>
+                        </uxap:ObjectPageSubSection>
+                    </uxap:subSections>
+                </uxap:ObjectPageSection>
+
+                <uxap:ObjectPageSection title="Recommendations">
+                    <uxap:subSections>
+                        <uxap:ObjectPageSubSection>
+                            <uxap:blocks>
+                                <Text text="Recommendation 1" />
+                                <Text text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
+                            </uxap:blocks>
+                        </uxap:ObjectPageSubSection>
+
+                        <uxap:ObjectPageSubSection>
+                            <uxap:blocks>
+                                <Text text="Recommendation 2" />
+                                <Text text="Sed tincidunt est non gravida molestie." />
+                            </uxap:blocks>
+                        </uxap:ObjectPageSubSection>
+                    </uxap:subSections>
+                </uxap:ObjectPageSection>
+
+                <uxap:ObjectPageSection title="Contact">
+                    <uxap:subSections>
+                        <uxap:ObjectPageSubSection>
+                            <uxap:blocks>
+                                <Text text="Phone: +123456789" />
+                                <Text text="Address: 123 Main St, New York" />
+                            </uxap:blocks>
+                        </uxap:ObjectPageSubSection>
+                    </uxap:subSections>
+                </uxap:ObjectPageSection>
+            </uxap:sections>
+        </uxap:ObjectPageLayout>
+    </Page>
+</mvc:View>
