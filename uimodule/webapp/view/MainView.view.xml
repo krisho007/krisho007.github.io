@@ -28,7 +28,7 @@
 
 		<headerContent>
 			<m:FlexBox wrap="Wrap">
-				<m:Avatar class="sapUiSmallMarginEnd" src="../images/Profile.jpg"  displaySize="XL" />
+				<m:Avatar class="sapUiSmallMarginEnd" src="../webapp/images/Profile.jpg"  displaySize="XL" />
 
 				<layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
 					<m:Link text="+91 9901 000 799"/>
