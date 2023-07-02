@@ -1,22 +1,30 @@
-<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:uxap="sap.uxap" displayBlock="true">
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:uxap="sap.uxap" displayBlock="true" controllerName="myProfile.controller.ObjectPage">
     <Page title="My Profile" showHeader="false" class="sapUiContentPadding">
         <uxap:ObjectPageLayout id="objectPageLayout" showHeaderContent="true" showAnchorBar="true">
             <uxap:headerTitle>
-                <uxap:ObjectPageHeader objectTitle="John Doe" objectSubtitle="Software Developer">
+                <uxap:ObjectPageHeader objectTitle="{/name}" objectSubtitle="{/occupation}">
                     <uxap:actions>
-                        <Button icon="sap-icon://linkedin" press="onLinkedInPress" tooltip="LinkedIn" />
+                        <Button icon="images/LinkedIn.png" press="onLinkedInPress" tooltip="LinkedIn" />
+                        <Button icon="images/SAPCommunity.png" press="onSAPCommunityPress" tooltip="LinkedIn" />
+                        <Button icon="images/SAPMentor.png" press="onMentorPress" tooltip="LinkedIn" />
                     </uxap:actions>
                 </uxap:ObjectPageHeader>
             </uxap:headerTitle>
-
+            <uxap:headerContent>
+                <Image src="images/Profile.jpg " width="200px" height="200px" />
+                <VBox>
+                    <Text text="SAP BTP, Business Process Automation" />
+                    <Text text="SAPUI5, Fiori" />
+                </VBox>
+            </uxap:headerContent>
             <uxap:sections>
                 <uxap:ObjectPageSection title="Personal Info">
                     <uxap:subSections>
                         <uxap:ObjectPageSubSection>
                             <uxap:blocks>
-                                <Text text="Name: John Doe" />
-                                <Text text="Location: New York" />
-                                <Text text="Email: john.doe@example.com" />
+                                <Text text="Name: {/name}" />
+                                <Text text="Location: {/location}" />
+                                <Text text="Email: {/email}" />
                             </uxap:blocks>
                         </uxap:ObjectPageSubSection>
                     </uxap:subSections>
@@ -42,7 +50,7 @@
                     </uxap:subSections>
                 </uxap:ObjectPageSection>
 
-                <uxap:ObjectPageSection title="Projects">
+                <uxap:ObjectPageSection title="Publications">
                     <uxap:subSections>
                         <uxap:ObjectPageSubSection>
                             <uxap:blocks>
@@ -84,6 +92,10 @@
                             <uxap:blocks>
                                 <Text text="Phone: +123456789" />
                                 <Text text="Address: 123 Main St, New York" />
+                                <core:HTML content="&lt;!-- Calendly inline widget begin --&gt;
+&lt;div class=&quot;calendly-inline-widget&quot; data-url=&quot;https://calendly.com/kkammaje/coaching-call&quot; style=&quot;min-width:320px;height:700px;&quot;&gt;&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://assets.calendly.com/assets/external/widget.js&quot; async&gt;&lt;/script&gt;
+&lt;!-- Calendly inline widget end --&gt;"/>
                             </uxap:blocks>
                         </uxap:ObjectPageSubSection>
                     </uxap:subSections>
