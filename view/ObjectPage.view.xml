@@ -24,7 +24,6 @@
                             <uxap:blocks>
                                 <Text text="Name: {/name}" />
                                 <Text text="Location: {/location}" />
-                                <Text text="Email: {/email}" />
                             </uxap:blocks>
                         </uxap:ObjectPageSubSection>
                     </uxap:subSections>
@@ -90,8 +89,9 @@
                     <uxap:subSections>
                         <uxap:ObjectPageSubSection>
                             <uxap:blocks>
-                                <Text text="Phone: +123456789" />
-                                <Text text="Address: 123 Main St, New York" />
+                                <Text text="Phone: {/mobile}" />                                
+                                <Text text="Email: {/email}" />
+                                <core:HTML content="&lt;p&gt; Did you like this website? Make it your own by cloning it from &lt;a href={/githubRepoUrl}&gt;here&lt;/a&gt;&lt;/p&gt;" />
                                 <core:HTML content="&lt;!-- Calendly inline widget begin --&gt;
 &lt;div class=&quot;calendly-inline-widget&quot; data-url=&quot;https://calendly.com/kkammaje/coaching-call&quot; style=&quot;min-width:320px;height:700px;&quot;&gt;&lt;/div&gt;
 &lt;script type=&quot;text/javascript&quot; src=&quot;https://assets.calendly.com/assets/external/widget.js&quot; async&gt;&lt;/script&gt;
